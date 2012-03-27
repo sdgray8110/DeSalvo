@@ -1,0 +1,198 @@
+/*
+Theme Name: DeSalvo 2011
+Theme URI: http://www.desalvocycles.com
+Author: Spencer Gray
+Author URI: http://www.desalvocycles.com
+Description: Proprietary theme for DeSalvo Custom Cycles
+Version: 0.1
+*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* DeSalvo Site */
+
+body {
+    background-color: #999999;
+    margin: auto;
+    width: 100%;
+}
+
+#page {
+    background-color: #666666;
+    border: 1px solid #000099;
+    box-shadow: 0 0 20px #000000;
+    margin: 10px auto;
+    overflow: hidden;
+    width: 1000px;
+}
+
+/**/
+div.header {position:relative; width:1000px; height: 170px; margin:0; padding:0; background-color:transparent;}
+
+/**/
+.headerleft {position: relative; float:left; width:850px; height:170px; margin:0; padding:0; background-color:transparent; color:#fff; font-size:.75em;}
+.header img.txt {position:relative; float:left; width:800px; height:170px; margin:10px 0 0 75px;}
+.header img.badge {position:relative; float:left; width:100px; height: 175px; margin:0 0 0 -175px;}
+
+/**/
+.headerright {position: relative; float:left; width:149px; height:150px; margin:10px 0 0 0; padding:0; background-color:transparent; border-left: 1px solid #333333;}
+.headerright p {float:left; width:125px; height:130px; margin:-20px 0 0 40px; color:#fff; font-size:.8em;}
+
+
+/* Main Navigation */
+.menu-main-menu-container {
+    width:1000px;
+    margin:5px 0 0;
+    padding:0;
+    height:30px;
+    font-family: verdana;
+    background-color:#009;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    position: relative;
+}
+
+.menu-main-menu-container ul > li {
+    display:block;
+    float:left;
+    clear:none;
+    width:140px;
+    position: relative;
+}
+
+.menu-main-menu-container ul ul {
+    display:none;
+    width:auto;
+    position:absolute;
+    float:left;
+    clear:both;
+    background: #009;
+    padding:10px 5px 0 5px;
+    left:-10px;
+}
+
+.menu-main-menu-container ul > li a {
+    line-height: 30px;
+}
+
+.menu-main-menu-container a {
+    color:#fff;
+    text-decoration: none;
+    font-size:17px;
+    text-shadow: black .5px .5px .5px;
+}
+
+.menu-main-menu-container ul > li:hover ul {
+    display:block;
+}
+
+.menu-main-menu-container ul ul li {
+    display:block;
+    float:left;
+    clear:both;
+}
+
+.menu-main-menu-container ul ul li a {
+    font-size:13px;
+    display:block;
+    width:100%;
+}
+
+.menu-main-menu-container ul ul li a:hover {
+    text-decoration: underline;
+}
+
+#menu-item-32 > a {
+    background:url(images/downarrow.png) no-repeat 75px 1px;
+    padding-right: 30px;
+}
+
+#menu-item-34 {
+    margin-left: 100px;
+}
+
+/* Footer */
+#footer {
+    width:100%;
+    overflow: hidden;
+    background: #009;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    border-top: 2px solid #4c728A;
+}
+
+.menu-footer-menu-container ul {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.menu-footer-menu-container ul li {
+    display:inline-block;
+    padding:0 20px;
+}
+
+#footer p, #footer a {
+    color:#666;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+#footer ul, #footer p {
+    margin:4px auto;
+}
+
+#footer p {
+    display:block;
+    clear:both;
+    text-align: center;
+}

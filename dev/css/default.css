@@ -1,0 +1,221 @@
+body {background-color:#999999; width:100%; margin: auto;}
+a, img {border:none; margin:0; padding:0; outline:none;}
+a:visited {color:inherit}
+fieldset, legend {border:none; display:block;}
+
+#page {width:1000px; overflow:hidden; margin: 10px auto; background-color: #666666; -moz-box-shadow:0 0 20px rgba(0, 0, 0, 1); -webkit-box-shadow:0 0 20px rgba(0, 0, 0, 1); border:1px solid #000099;}
+
+/**/
+div.header {position:relative; width:1000px; height: 170px; margin:0; padding:0; background-color:transparent;}
+
+/**/
+.headerleft {float:left; width:850px; height:170px; margin:0; padding:0; background-color:transparent; color:#fff; font-size:.75em;}
+.header img.txt {position:relative; float:left; width:800px; height:170px; margin:10px 0 0 75px;}
+.header img.badge {position:relative; float:left; width:100px; height: 175px; margin:0 0 0 -175px;}
+
+/**/
+.headerright {float:left; width:100px; height:150px; margin:10px 0 0 0; padding:0; background-color:transparent; border-left: 1px solid #333333;}
+.headerright p {float:left; width:100px; height:130px; margin:-20px 0 0 40px; color:#fff; font-size:.8em;}
+
+/**top navigation bar starts here**/
+div.topNav {position:relative; width: 1000px; margin:5px auto; padding:0; height:30px; font-family:verdana; font-size:1em; background-color:#000099; border-bottom:0; text-shadow: #000 .5px .5px .5px; -moz-box-shadow:0 0 10px rgba(0, 0, 0, 1); -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 1);}
+div.topNav ul {margin:0 0 0 70px; list-style-type:none;}
+div.topNav li {display: block; height:30px; margin:5px 0 0 10px; float:left; clear:none; list-style-type:none;}
+div.topNav li:hover {list-style-type:none; background:transparent;}
+div.topNav li a {color:#fff; text-decoration:none; display:block !important; width:100%; height:30px; padding:0;}
+div.topNav li a:hover {color:#fff; text-decoration:none; background-color:transparent;}
+
+.about {width:150px;}/*background-color:transparent; text-align:center; border-left: 1px solid #000*/
+.about li a {color:#fff;}
+.bikes {width:150px;}
+.bikes li a {color:#fff;}
+.store {width:150px;}
+.store li a {color:#fff;}
+.ordering {width:150px;}
+.ordering li a {color:#fff;}
+.partners {width:150px;}
+.partners li a {color:#fff;}
+.contact {width:150px;}
+.contact li a {color:#fff;}
+
+.topNav li ul {position:relative; z-index:2; display:none; float:left; clear:both; padding:10px 0 0 5px; width:150px; margin: -6px 0 0 -5px; border: 1px solid #000099;}
+.topNav li:hover ul {display:block; background-color:#000099; border-top: 1px solid #000099; font-size:.8em;}/*if i need to use a transparent background image this is where it will need to go  background-image:url("../images/dropdown.png");*/
+.topNav li ul li {width:150px; clear:both; height:30px; margin:5px 0 0 0;}
+.topNav li ul li a:hover {color:#fff; background:transparent; text-decoration:underline;}
+/*top navigation bar ends here*/
+
+/*signature bikes section starts here*/
+div.signature {position:relative; width:1000px; height: 200px; margin: 15px auto; padding:0; background-color:transparent;}
+.signature p {width:900px; height:25px; margin:auto; color:#fff; border-bottom:4px solid #000099; font-family:verdana; font-size:1.2em;}
+.signature img {float:left; width:175px; height:150px; margin:10px 0 0 60px;}
+
+/**/
+div.press {position:relative; width:1000px; height: 300px; margin: 30px auto; padding:0; background-color:transparent;}
+.press p {float:left; width:265px; height:25px; margin:0 0 0 50px; color:#fff; border-bottom:4px solid #000099; font-family:verdana; font-size:1.2em;}
+
+/**/
+div.media {position:relative; float:left; width:404px; overflow:hidden; margin: 15px 50px; padding:0; background-color:transparent;}
+.media p {float:left; width:404px; height:25px; margin:0; color:#fff; border-bottom:4px solid #000099; font-family:verdana; font-size:1.2em;}
+.mediacontents {float:left; width:404px; overflow:hidden; margin:0; padding:1px; color:#fff; text-align:justify; background-color:#4c728a;}
+
+/**/
+div.recent {position:relative; float:left; width:404px; overflow:hidden; margin: 15px 50px; padding:0; background-color:transparent;}
+.recent p {float:left; width:404px; height:25px; margin:0; color:#fff; border-bottom:4px solid #000099; font-family:verdana; font-size:1.2em;}
+.recentcontents {float:left; width:404px; overflow:hidden; margin:0; padding:1px; color:#fff; text-align:justify; background-color:#4c728a;}
+
+/**/
+div.updates {position:relative; float:left; width:908px; overflow:hidden; margin: 15px 50px 30px 50px; padding:0; background-color:transparent;}
+.updates p {float:left; width:908px; height:25px; margin:0; color:#fff; border-bottom:4px solid #000099; font-family:verdana; font-size:1.2em;}
+.updatescontent {float:left; width:908px; overflow:hidden; margin:0px; padding:1px; color:#fff; text-align:justify; background-color:#4c728a;}
+.updatescontent a.thumb {float:left; width:200px; margin:3px 5px 2px 0;}
+.updatescontent div {display:block; overflow:hidden;}
+.updatescontent a.thumb {float:left; width:200px; margin:3px 5px 10px 0; display:block;}
+.updatescontent h5 {font-size:16px; float:left; margin:3px; width:675px; text-align:left;}
+.updatescontent p {font-size:12px; float:left; margin:3px; padding:0; clear:none; width:675px; border:none; text-align:left}
+
+/**/
+div.mainImage {width:1000px; height: 400px; margin:0; padding:0; background-color:transparent; }
+.mainImage img {float:left; width:1000px; height:400px; margin:-5px 0 0 0; border-bottom:4px solid #000099;}
+
+
+/**/
+div.social {float:left; width:100px; height:50px; margin:5px 0 0 25px; padding:0; background-color:transparent;}
+div.social a {color:#fff;text-decoration:none;}
+
+
+/**/
+#bottomnav {width:1000px; overflow:hidden; margin:auto; background-color: #000099; -moz-box-shadow:0 0 20px rgba(0, 0, 0, 1); -webkit-box-shadow:0 0 20px rgba(0, 0, 0, 1); border-top:2px solid #4c728a;}
+.bottomNav {width:1000px; height:25px; margin:0 0 0 100px; padding:0;}
+.bottomNav li {display: block; height:25px; width:100px; margin:0; float:left; clear:none; list-style-type:none}
+.bottomNav li:hover {list-style-type:none; background:transparent;}
+.bottomNav li a {color:#666666; text-decoration:none; display:block !important; width:100%; height:25px; padding:0;}
+.bottomNav li a:hover {color:#666666; text-decoration:underline; background-color:transparent;}
+
+/**/
+.customer {width:150px;}
+
+/**/
+.copywrite {width:auto; text-align:center; overflow:hidden; margin:auto; color:#666666;}
+
+/**/
+.descriptions {width:908px; margin:auto; padding:1px; overflow:hidden; font-family:arial; font-size:14px; color:#fff; text-align:justify; background:transparent;}
+
+/**/
+.info {width:908px; margin:auto; padding:1px; overflow:hidden; background:transparent;}
+.info p {width:500px; float:left; font-family:arial; font-size:14px; color:#fff; text-align:justify;}
+.info img {position:relative; float:left; width:300px; margin:-55px 0 25px 50px; border:4px solid #000099; -moz-box-shadow:0 0 20px rgba(0, 0, 0, 1); -webkit-box-shadow:0 0 20px rgba(0, 0, 0, 1);}
+
+/**/
+div.tubing {position:relative; float:left; width:400px; overflow:hidden; margin: 15px 50px; padding:0; background-color:transparent;}
+.tubing p {float:left; width:400px; height:25px; margin:0; color:#fff; border-bottom:4px solid #000099; font-family:verdana; font-size:1.2em;}
+.tubingcontent {float:left; width:400px; verflow:hidden; margin:0; color:#fff; background-color:#4c728a;}
+
+/**/
+div.features {position:relative; float:left; width:400px; overflow:hidden; margin: 15px 50px; padding:0; background-color:transparent;}
+.features p {float:left; width:400px; height:25px; margin:0; color:#fff; border-bottom:4px solid #000099; font-family:verdana; font-size:1.2em;}
+.featurescontent {float:left; width:400px; verflow:hidden; color:#fff; margin:0; background-color:#4c728a;}
+
+/**/
+div.geometry {position:relative; width:908px; margin: 15px auto; padding:0;}
+.geometry p {float:left; width:908px; height:25px; margin:0; color:#fff; border-bottom:4px solid #000099; font-family:verdana; font-size:1.2em;}
+.geometrycontent {float:left; width:908px; margin:0 0 15px 0; color:#fff; font-size:.9em; background-color:#4c728a;}
+
+/**/
+div.contactus {position:relative; width:908px; height: 300px; margin: 15px auto; padding:0; background-color:transparent;}
+.contactus p {float:left; width:908px; height:25px; margin:0; color:#fff; border-bottom:4px solid #000099; font-family:verdana; font-size:1.2em;}
+.contactuscontent {float:left; width:908px; color:#000; margin:0 0 15px 0; background-color:#4c728a;}
+
+/**/
+div.pagetitle {position:relative; width:908px; height: 25px; margin: 15px auto 0; padding:0; background-color:transparent;}
+.pagetitle p {float:left; width:908px; height:25px; margin:0; color:#fff; border-bottom:4px solid #000099; font-family:verdana; font-size:1.2em;}
+
+/**/
+div.order {width:908px; margin:0 50px 30px 50px; padding:1px; height:300px; font-family:arial; font-size:14px; color:#fff; text-align:justify; background-color:#4c728a;}
+div.order a {color:#B40404; text-decoration:none;}
+div.order a:hover {color:#B40404; text-decoration:underline;}
+
+/**/
+div.buildkits {width:908px; margin:0 auto 30px; padding:1px; overflow:hidden; font-family:arial; font-size:14px; color:#fff; text-align:justify; background-color:#4c728a;}
+ul.buildkits {float:left; width:250px; margin:0; list-style-type:none;}
+ul.buildkits li {width:200px; height:auto; margin:20px 0; background-color:#000;}
+ul.buildkits li img {width:200px; height:auto;}
+
+/**/
+div.links {width:908px; margin:0 auto 30px; padding:1px; height:300px; background-color:#4c728a;}
+ul.links {float:left; width:350px; margin:10px auto; list-style-type:none;}
+ul.links a {color:#fff; text-decoration:none;}
+ul.links a:hover {color:#fff; text-decoration:underline;}
+
+/**/
+.faq {width:908px; margin:auto;}
+.faq h3 {float:left; font-weight:300; width:908px; height:25px; margin:0; color:#fff; border-bottom:4px solid #000099; font-family:verdana; font-size:1.2em;}
+
+
+/* Accordion */
+ul.accordion {width:888px; overflow:hidden; margin:0 auto; padding:10px; color:#fff; background-color:#4c728a; clear:both; list-style-type:none;}
+ul.accordion h4 {cursor:pointer; padding:10px; border-bottom:2px solid #fff; background:#000099; margin:0; font-family:verdana; font-size:14px;}
+ul.accordion li {margin:0 25px 10px 25px;}
+ul.accordion .slider {display:none; background:#333333; padding:10px}
+ul.accordion .active h4, ul.accordion h4:hover {background:#000;}
+ul.accordion h4 span {float:right; width:12px; height:12px; display:block; margin:3px 10px; background:url('../css/images/plus.png') no-repeat;}
+ul.accordion .active h4 span {background:url('../css/images/minus.png') no-repeat;}
+
+/*********/
+/* NOTES */
+/*********/
+/*
+ * Each column has an assigned class - you can set an explicit width on each class if you wish
+ * I currently have the UL set to 708px wide which is 100px for each li plus 1px margin to make the border
+ * The only requirement is that the width of the UL needs to be the same as the total width + margin of all of the LIs
+ */
+
+/* SPENCER'S GEOMETRY STUFFS */
+ul.bikeGeometry {margin:10px auto; padding:0 0 1px 0; width:908px; font-family:arial; font-size:11px; background:#000099; overflow:hidden;}
+.bikeGeometry li {list-style-type:none; display:block; float:left; clear:none; width:128px; margin: 1px 0 0 1px; text-align:center; background:#fff; height:15px;}
+.bikeGeometry li.csl {width:132px;}
+
+/* I've given Odd Rows another class that you can style if you desire - I'm giving them a gray background (the first row is row 0 btw) */
+.bikeGeometry li.oddRow {background:#ecebeb;}
+.bikeGeometry li.header {background:#ecebeb; line-height:15px; height:30px;}
+.bikeGeometry li.title {width:906px; text-transform:uppercase; background:#000; font-size:16px; height:22px; line-height:22px;  color:#fff;}
+.bikeGeometry li.title, .bikeGeometry li.header {font-weight:700;}
+
+/* PHOTO GALLERY */
+#bikeGallery {width:900px; margin: auto; clear:both;}
+#bikeGallery .bigImg {text-align:center; height:400px; background-color:#4c728a;}
+#bikeGallery ul {list-style-type:none; margin:10px 0; padding:0;}
+#bikeGallery li {float:left; margin:0 4px; text-align:center; background: #333333; padding:3px; border:3px solid #fff;}
+#bikeGallery li, #bikeGallery li a {display:block; width:110px; height:83px;}
+#bikeGallery li.active {border:3px solid #000099;}
+#bikeGallery li img {opacity:.4}
+#bikeGallery li.active img, #bikeGallery li:hover img {opacity:1}
+
+/* GLOBAL CAROUSEL */
+.carouselContainer {position:relative;}
+.carousel, .carousel ul {position:relative; overflow:hidden;}
+.carouselContainer .prev, .carouselContainer .next {position:absolute; display:block; text-decoration:none;}
+
+/* BIKE GALLERY CAROUSEL */
+#bikeGallery .carousel {width:780px; height:105px; margin:auto; position:relative;}
+#bikeGallery .prev, #bikeGallery .next {font-weight:700; top:40px; font-family:arial; color:#000099; font-size:35px}
+#bikeGallery .prev {left: 30px}
+#bikeGallery .next {right: 30px}
+#bikeGallery .disabled {color:#000}
+
+/* CONTACT US FORM */
+.contactInfo {margin:10px 0 0; padding:0; list-style-type:none;}
+.contactInfo li {margin:0; text-align:center; color:#fff; font-family:verdana; font-size:18px}
+.contactInfo h4 {font-size:22px; margin:0;}
+
+#contactUs fieldset {display:block; width:100%;}
+#contactUs legend {text-align:center; color:#333; font-size:24px; margin:12px auto;  width:210px; border-bottom:1px solid navy}
+#contactUs {width:700px; background:#ccc; display:block; margin: 15px auto; font-family:arial; }
+#contactUs label, #contactUs input.text, #contactUs select {float:left; height:20px}
+#contactUs textarea, #contactUs input.text {padding:3px}
+#contactUs textarea {float:left; width:400px; height:200px; border:1px solid #000;}
+#contactUs label {width:200px; color:#333; font-weight:700; clear:both; margin-right:15px; text-align:right;}
+#contactUs input.text, #contactUs select {margin-bottom:10px; width:250px; border:1px solid #000;}
+#contactSubmit {clear:both; margin:10px 0 0 215px;}
+#contactUs p {width:auto; font-size:12px; border:none;color:#000; margin:0 30px}
+#contactEmail {display:none;}
+

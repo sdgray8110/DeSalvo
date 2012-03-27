@@ -1,0 +1,5 @@
+[29-Jan-2011 21:08:46] PHP Fatal error:  Cannot use object of type stdClass as array in /home/desalvo/public_html/dev/php/bikeDimensions.php on line 22
+[29-Jan-2011 21:10:12] PHP Fatal error:  Cannot use object of type stdClass as array in /home/desalvo/public_html/dev/php/bikeDimensions.php on line 22
+[29-Jan-2011 21:13:22] PHP Parse error:  syntax error, unexpected T_ECHO in /home/desalvo/public_html/dev/php/bikeDimensions.php on line 23
+[29-Jan-2011 21:13:29] PHP Parse error:  syntax error, unexpected T_ECHO in /home/desalvo/public_html/dev/php/bikeDimensions.php on line 23
+[30-Jan-2011 00:07:30] PHP Parse error:  syntax error, unexpected $end, expecting ')' in /home/desalvo/public_html/dev/php/bikeDimensions.php on line 45
