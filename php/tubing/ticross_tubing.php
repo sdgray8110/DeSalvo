@@ -2,7 +2,7 @@
     <p>Tubing &amp; Pricing</p>
     <div class="tubingcontent">
         <ul>
-            <li>Titanium Cross fram: $2375</li>
+            <li>Titanium Cross frame: $2550</li>
         </ul>
     </div>
 </div>

@@ -4,7 +4,7 @@
     <div class="contactuscontent">
         <ul class="contactInfo">
             <li><h4>DeSalvo Custom Cycles</h4></li>
-            <li>668 Tolman Creek Road</li>
+            <li>255 Helman St. Suite 3A</li>
             <li>Ashland, OR 97520</li>
             <li>Phone: 541-488-8400</li>
         </ul>

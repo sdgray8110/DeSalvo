@@ -2,8 +2,8 @@
     <p>Tubing &amp; Pricing</p>
     <div class="tubingcontent">
         <ul>
-            <li>Columbus Zona frame: $1475</li>
-            <li>Columbus Life frame: $1675</li>
+            <li>Columbus Zona frame: $1575</li>
+            <li>Columbus Life frame: $1775</li>
             <li>Carbon seat stays: +$350</li>
             <li>Carbon chain stays: +$200</li>
             <li>Lugged construction: +$350</li>
