@@ -1,5 +1,5 @@
 <?php
-$phpRoot = '/home/desalvo/public_html/php/';
+$phpRoot = $_SERVER['DOCUMENT_ROOT'] . '/php/';
 $contextRoot = 'http://www.desalvocycles.com/';
 require_once($phpRoot . 'config.php');
 
