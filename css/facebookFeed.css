@@ -1,0 +1,26 @@
+/* Facebook */
+.facebookContainer {background-color:transparent; float:left; color:#fff; width:908px; margin:0; height:300px; position:relative;}
+.facebookContainer h3 {background:url('../images/socialIcons/fbHead.png') repeat-x; color:#fff; padding: 10px 0 10px 60px; position:relative; font-family:Georgia; font-weight:300; font-size:24px;}
+.facebookContainer h3 span {width:63px; height:62px; display:block; position:absolute; top:-8px; left:-9px; background:url('../images/socialIcons/fbFeedLogo.png') no-repeat; z-index:2;}
+
+#fbFeed {overflow-y:auto; height:300px; margin:15px 10px 10px; color:#fff;}
+
+#fbFeed {overflow-y:auto; height:300px; margin:15px 10px 10px;}
+#fbFeed li {padding-bottom:5px; margin-bottom:8px; border-bottom:1px dashed #d9d9d9; overflow:hidden;}
+#fbFeed li > img, #fbFeed li div {float:left;}
+#fbFeed li > img {width:100px; height:100px; margin:0 8px 0 0;}
+#fbFeed li div {width:908px}
+#fbFeed li p {font-size:11px; color:#fff; margin:0 0 3px 0; font-family:'lucida grande', tahoma, verdana, arial, sans-serif;}
+#fbFeed a:hover {text-decoration:underline;}
+#fbFeed .postLink {font-weight:700; color: #fff;}
+#fbFeed .postDetails {color:#fff; line-height:15px;}
+#fbFeed .username {font-weight:700; color: #fff;}
+#fbFeed .postDetails img {display:block; float:left; width:16px; margin:0 4px 0 0;}
+#fbFeed .postDetails a {font-weight:300; color:#fff;}
+#fbLoadingGif {width:32px; height:32px; position:absolute; top:100px; left:143px;}
+
+/* Comments */
+#fbFeed ul.comments {display:none; padding-top:5px; background:url('http://static.ak.fbcdn.net/rsrc.php/z7/r/UvyvLtJTQzO.png') no-repeat 17px 0;}
+#fbFeed .comments li {border-bottom:none; padding:4px; margin: 0 0 2px 0; background:#edeff4;}
+#fbFeed .comments li div {width:904px;}
+#fbFeed .comments p.postDetails {margin:0; color: #fff;}
