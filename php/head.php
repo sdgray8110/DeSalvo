@@ -1,6 +1,6 @@
 <?php
 $phpRoot = $_SERVER['DOCUMENT_ROOT'] . '/php/';
-$contextRoot = 'http://www.desalvocycles.com/';
+$contextRoot = 'http://' . $_SERVER['HTTP_HOST'] . '/';
 require_once($phpRoot . 'config.php');
 
 $pageTitle ? $pageTitle = 'DeSalvo Custom Cycles | ' . $pageTitle : $pageTitle = 'DeSalvo Custom Cycles';

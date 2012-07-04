@@ -130,9 +130,14 @@ div.pagetitle {position:relative; width:908px; height: 25px; margin: 15px auto 0
 .pagetitle p {float:left; width:908px; height:25px; margin:0; color:#fff; border-bottom:4px solid #000099; font-family:verdana; font-size:1.2em;}
 
 /**/
-div.order {width:908px; margin:0 50px 30px 50px; padding:1px; height:300px; font-family:arial; font-size:14px; color:#fff; text-align:justify; background-color:#4c728a;}
-div.order a {color:#B40404; text-decoration:none;}
-div.order a:hover {color:#B40404; text-decoration:underline;}
+div.order {width:908px; margin: 0 0 15px 46px; padding:1px; height:300px; font-family:arial; font-size:14px; color:#fff; text-align:justify; background-color:#4c728a;}
+div.order p {float:left; width: 900px; margin: 5px}
+div.order a {color:#fff; text-decoration:none;}
+div.order a:hover {color:#fff; text-decoration:underline;}
+/* ORDER PROCESS */
+div.order .ordersteps {list-style-type:none; margin-left:50px; padding:0;}
+div.order .ordersteps a {color:#009; text-decoration:none;}
+div.order .ordersteps a:hover {color:#009; text-decoration:underline;}
 
 /**/
 div.buildkits {width:908px; margin:auto; padding:1px; overflow:hidden; font-family:arial; font-size:14px; color:#fff; text-align:justify; background-color:#4c728a;}
@@ -215,4 +220,5 @@ ul.bikeGeometry {margin:10px auto; padding:0 0 1px 0; width:908px; font-family:a
 #contactSubmit {clear:both; margin:10px 0 0 215px;}
 #contactUs p {width:auto; font-size:12px; border:none;color:#000; margin:0 30px}
 #contactEmail {display:none;}
+
 
