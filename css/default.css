@@ -9,13 +9,13 @@ fieldset, legend {border:none; display:block;}
 div.header {position:relative; width:1000px; height: 170px; margin:0; padding:0; background-color:transparent;}
 
 /**/
-.headerleft {position: relative; float:left; width:850px; height:170px; margin:0; padding:0; background-color:transparent; color:#fff; font-size:.75em;}
+.headerleft {float:left; width:850px; height:170px; margin:0; padding:0; background-color:transparent; color:#fff; font-size:.75em;}
 .header img.txt {position:relative; float:left; width:800px; height:170px; margin:10px 0 0 75px;}
 .header img.badge {position:relative; float:left; width:100px; height: 175px; margin:0 0 0 -175px;}
 
 /**/
-.headerright {position: relative; float:left; width:149px; height:150px; margin:10px 0 0 0; padding:0; background-color:transparent; border-left: 1px solid #333333;}
-.headerright p {float:left; width:125px; height:130px; margin:-20px 0 0 40px; color:#fff; font-size:.8em;}
+.headerright {float:left; width:100px; height:150px; margin:10px 0 0 0; padding:0; background-color:transparent; border-left: 1px solid #333333;}
+.headerright p {float:left; width:100px; height:130px; margin:-20px 0 0 40px; color:#fff; font-size:.8em;}
 
 /**top navigation bar starts here**/
 div.topNav {position:relative; width: 1000px; margin:5px auto; padding:0; height:30px; font-family:verdana; font-size:1em; background-color:#000099; border-bottom:0; text-shadow: #000 .5px .5px .5px; -moz-box-shadow:0 0 10px rgba(0, 0, 0, 1); -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 1);}
@@ -71,15 +71,37 @@ div.updates {position:relative; float:left; width:908px; overflow:hidden; margin
 .updatescontent div {display:block; overflow:hidden;}
 .updatescontent a.thumb {float:left; width:200px; margin:3px 5px 10px 0; display:block;}
 .updatescontent h5 {font-size:16px; float:left; margin:3px; width:675px; text-align:left;}
-.updatescontent p {font-size:12px; float:left; margin:3px; padding:0; clear:none; width:675px; border:none; text-align:left}
+.updatescontent p {font-size:12px; float:left; margin:3px; padding:0; clear:none; width:675px; border:none; text-align:left; color:#fff;}
+
+div.facebook {float:left; width:908px; overflow:hidden; margin:0px; padding:1px; color:#fff; text-align:justify; background-color:#4c728a;}
+div.fbleft {float:left; width:450px; overflow:hidden; margin:0px; padding:1px; color:#fff; text-align:justify; background-color:#4c728a;}
+div.fbright {float:left; width:450px; overflow:hidden; margin:0px; padding:1px; color:#fff; text-align:justify; background-color:#4c728a;}
+.facebookcontent p {font-size:12px; float:left; margin:5px; padding:0; clear:none; width:300px; height: auto; border:none; text-align:left; color:#fff;}
+.facebookcontent h5 {font-size:14px; float:left; margin:3px; width:300px; text-align:left;}
+.facebookcontent img {float: left; width: auto; height: auto; margin: 5px; padding:0;}
+.facebookcontent a {color: #FFFFFF;}
+.facebookcontent a:visited {color:#FFFFFF;}
+.facebookcontent a:active {color:#FFFFFF;}
+
+div.awards {float:left; width:908px; overflow:hidden; margin:0px; padding:1px; color:#fff; text-align:justify; background-color:#4c728a;}
+div.awardsleft {float:left; width:350px; height:100px; overflow:hidden; margin:0px; padding:1px; color:#fff; text-align:justify; background-color:#4c728a;}
+.awardscontent p {font-size:14px; float:left; margin:5px 0 0 10px; padding:0; clear:none; width:225px; height: 18px; border:none; text-align:left; color:#fff;}
+.awardscontent img {float: left; width: 100px; height: 71px; margin: 5px 0 0 15px; padding:0;}
+.awardscontent h5 {font-size:14px; float:left; margin:3px; width:300px; text-align:left;}
+.awardscontent a {color: #FFFFFF;}
+.awardscontent a:visited {color:#FFFFFF;}
+.awardscontent a:active {color:#FFFFFF;}
+
+div.awardsright {float:left; width:550px; overflow:hidden; margin:0px; padding:1px; color:#fff; text-align:justify; background-color:#4c728a;}
+div.awardsright p {font-size:13px; float:left; margin:5px 0 0 5px; padding:0; clear:none; width:540px; height: 100px; border:none; text-align:justify; color:#fff;}
 
 /**/
-div.mainImage {position:relative; width:1000px; height: 400px; margin:0; padding:0; background-color:transparent; }
+div.mainImage {width:1000px; height: 400px; margin:0; padding:0; background-color:transparent; }
 .mainImage img {float:left; width:1000px; height:400px; margin:-5px 0 0 0; border-bottom:4px solid #000099;}
 
 
 /**/
-div.social {position:relative; float:left; width:125px; height:50px; margin:5px 0 0 25px; padding:0; background-color:transparent;}
+div.social {float:left; width:100px; height:50px; margin:5px 0 0 25px; padding:0; background-color:transparent;}
 div.social a {color:#fff;text-decoration:none;}
 
 
@@ -130,23 +152,25 @@ div.pagetitle {position:relative; width:908px; height: 25px; margin: 15px auto 0
 .pagetitle p {float:left; width:908px; height:25px; margin:0; color:#fff; border-bottom:4px solid #000099; font-family:verdana; font-size:1.2em;}
 
 /**/
-div.order {width:908px; margin: 0 0 15px 46px; padding:1px; height:300px; font-family:arial; font-size:14px; color:#fff; text-align:justify; background-color:#4c728a;}
-div.order p {float:left; width: 900px; margin: 5px}
-div.order a {color:#fff; text-decoration:none;}
-div.order a:hover {color:#fff; text-decoration:underline;}
+div.order {width:908px; margin:0 50px 30px 50px; padding:1px; height:300px; font-family:arial; font-size:14px; color:#fff; text-align:justify; background-color:#4c728a;}
+div.order a {color:#B40404; text-decoration:none;}
+div.order a:hover {color:#B40404; text-decoration:underline;}
 /* ORDER PROCESS */
 div.order .ordersteps {list-style-type:none; margin-left:50px; padding:0;}
 div.order .ordersteps a {color:#009; text-decoration:none;}
 div.order .ordersteps a:hover {color:#009; text-decoration:underline;}
 
 /**/
-div.buildkits {width:908px; margin:auto; padding:1px; overflow:hidden; font-family:arial; font-size:14px; color:#fff; text-align:justify; background-color:#4c728a;}
+div.buildkits {width:908px; margin:0 auto 30px; padding:1px; overflow:hidden; font-family:arial; font-size:14px; color:#fff; text-align:justify; background-color:#4c728a;}
 ul.buildkits {float:left; width:250px; margin:0; list-style-type:none;}
 ul.buildkits li {width:200px; height:auto; margin:20px 0; background-color:#000;}
 ul.buildkits li img {width:200px; height:auto;}
 
 /**/
-ul.links {list-style-type:none;}
+div.links {width:908px; margin:0 auto 30px; padding:1px; height:300px; background-color:#4c728a;}
+ul.links {float:left; width:350px; margin:10px auto; list-style-type:none;}
+ul.links a {color:#fff; text-decoration:none;}
+ul.links a:hover {color:#fff; text-decoration:underline;}
 
 /**/
 .faq {width:908px; margin:auto;}
@@ -220,5 +244,4 @@ ul.bikeGeometry {margin:10px auto; padding:0 0 1px 0; width:908px; font-family:a
 #contactSubmit {clear:both; margin:10px 0 0 215px;}
 #contactUs p {width:auto; font-size:12px; border:none;color:#000; margin:0 30px}
 #contactEmail {display:none;}
-
 

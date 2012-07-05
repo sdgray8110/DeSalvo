@@ -5,8 +5,9 @@ require_once($phpRoot . 'config.php');
 
 $pageTitle ? $pageTitle = 'DeSalvo Custom Cycles | ' . $pageTitle : $pageTitle = 'DeSalvo Custom Cycles';
 $pageData ? $pageCSS = '<link rel="stylesheet" type="text/css" href="'.$contextRoot.'css/'.$pageData.'.css" />' : $pageCSS = '';
+?>
 
-echo '
+<?php echo '
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
