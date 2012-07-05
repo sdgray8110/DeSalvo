@@ -6,7 +6,7 @@
     <p>How do I order?</p>
     <ul class="ordersteps">
     	<li>Step #1: <a href="orderform/DeSalvo-Order-Form.pdf">Download the Form</a></li>
-    	<li>Step #2: Submit your Deposit | Steel Frame click <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=mike@desalvocycles.com&undefined_quantity=1&item_name=steel%20frame&amount=1000.00&custom=test@test.poo|registration&return=http://www.desalvocycles.com/orders_new.php&rm=1&cancel_return=http://www.desalvocycles.com/orders_new.php&currency_code=USD">Here</a> | Ti Frame click <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=mike@desalvocycles.com&undefined_quantity=1&item_name=ti%20frame&amount=1200.00&custom=test@test.poo|registration&return=http://www.desalvocycles.com/orders_new.php&rm=1&cancel_return=http://www.desalvocycles.com/orders_new.php&currency_code=USD">Here</a></li>
+    	<li>Step #2: Submit your Deposit | Steel Frame click <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=mike@desalvocycles.com&undefined_quantity=1&item_name=steel%20frame&amount=775.00&custom=test@test.poo|registration&return=http://www.desalvocycles.com/orders_new.php&rm=1&cancel_return=http://www.desalvocycles.com/orders_new.php&currency_code=USD">Here</a> | Ti Frame click <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=mike@desalvocycles.com&undefined_quantity=1&item_name=ti%20frame&amount=1200.00&custom=test@test.poo|registration&return=http://www.desalvocycles.com/orders_new.php&rm=1&cancel_return=http://www.desalvocycles.com/orders_new.php&currency_code=USD">Here</a></li>
     	<li>Step #3: Submit your order form via <a href="mailto:mike@desalvocycles.com?subject=New Bike Order">Email</a></li>
     </ul>
 
