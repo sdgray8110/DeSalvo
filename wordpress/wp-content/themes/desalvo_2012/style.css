@@ -74,6 +74,79 @@ body {
     width: 1000px;
 }
 
+/* Global Site Styles */
+.pageContent {
+    width: 908px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.pageContent h1 {
+    width: 100%;
+    float: left;
+    height: 25px;
+    margin-bottom: 20px;
+    color: white;
+    border-bottom: 4px solid #009;
+    font-family: verdana;
+    font-size: 1.2em;
+}
+
+.pageContent p,
+.pageContent li {
+    font-family: arial;
+    font-size: 14px;
+    color: #fff;
+}
+
+.pageContent p {
+    text-align: justify;
+    margin: 0 0 15px;
+}
+
+.pageContent a {
+    color: #fff;
+    text-decoration: none;
+    FONT-WEIGHT: 700;
+}
+
+.pageContent a:hover {
+    text-decoration: underline;
+}
+
+
+.imageRight {
+    float: right;
+    margin: 0 0 15px 30px;
+}
+
+.imageRight img {
+    display: block;
+}
+
+/* About Page */
+
+.about-desalvo-custom-cycles .imageRight {
+    border: 4px solid #009;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+/* Partners page */
+.partners > ul {
+    width:828px;
+    min-height: 300px;
+    float: left;
+    background: #4c728a;
+    padding: 10px 40px;
+    margin: 0;
+}
+
+.partners li {
+    float: left;
+    width: 394px;
+    margin: 0 20px 0 0;
+}
+
 /**/
 div.header {position:relative; width:1000px; height: 170px; margin:0; padding:0; background-color:transparent;}
 
