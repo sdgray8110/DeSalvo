@@ -31,7 +31,6 @@ class facebookFeed {
         return substr($json, 6, -2 );
     }
 
-
     private function mikesPosts() {
         return $this->decodeFeed($this->getCachedFeed());
     }

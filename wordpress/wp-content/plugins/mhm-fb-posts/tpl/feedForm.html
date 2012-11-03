@@ -1,0 +1,48 @@
+<script id="feedFormTemplate" type="text/x-jquery-tmpl">
+    <form class="fbFeedForm" id="addFacebookFeed" method="post" action="">
+        <label for="feedName">App Name</label>
+        <input class="text" type="text" name="feedName" id="feedName" value="${feedName}" tabindex="1" >
+
+        <label for="fbUserID">Facebook User ID</label>
+        <input class="text" type="text" name="fbUserID" id="fbUserID" value="${fbUserID}" tabindex="2" >
+
+        <label for="fbAppID">Facebook App ID</label>
+        <input class="text" type="text" name="fbAppID" id="fbAppID" value="${fbAppID}" tabindex="3" >
+
+        <label for="fbSecret">Facebook App Secret</label>
+        <input class="text" type="text" name="fbSecret" id="fbSecret" value="${fbSecret}" tabindex="4">
+
+        <label for="fbLimit">Number of posts to include</label>
+        <select id="fbLimit" name="fbLimit">
+            <option ${fbPostsGlobal.isSelected(10,fbLimit)} value="10">10</option>
+            <option ${fbPostsGlobal.isSelected(9,fbLimit)} value="9">9</option>
+            <option ${fbPostsGlobal.isSelected(8,fbLimit)} value="8">8</option>
+            <option ${fbPostsGlobal.isSelected(7,fbLimit)} value="7">7</option>
+            <option ${fbPostsGlobal.isSelected(6,fbLimit)} value="6">6</option>
+            <option ${fbPostsGlobal.isSelected(5,fbLimit)} value="5">5</option>
+            <option ${fbPostsGlobal.isSelected(4,fbLimit)} value="4">4</option>
+            <option ${fbPostsGlobal.isSelected(3,fbLimit)} value="3">3</option>
+            <option ${fbPostsGlobal.isSelected(2,fbLimit)} value="2">2</option>
+            <option ${fbPostsGlobal.isSelected(1,fbLimit)} value="1">1</option>
+        </select>
+
+        <label for="fbOwnerOnly">Only show posts from feed owner?</label>
+        <span class="label">Yes</span>
+        <input type="radio" name="fbOwnerOnly" id="fbOwnerOnly" value="1" ${fbPostsGlobal.isChecked(1,fbOwnerOnly)} />
+
+        <span class="label">No</span>
+        <input type="radio" name="fbOwnerOnly" id="fbOwnerOnlyNo" value="0" ${fbPostsGlobal.isChecked(0,fbOwnerOnly)} />
+
+        <label for="fbPhotosOnly">Only show posts with photos?</label>
+
+        <span class="label">Yes</span>
+        <input type="radio" name="fbPhotosOnly" id="fbPhotosOnly" value="1"  ${fbPostsGlobal.isChecked(1,fbPhotosOnly)} />
+
+        <span class="label">No</span>
+        <input type="radio" name="fbPhotosOnly" id="fbPhotosOnlyNo" value="0" ${fbPostsGlobal.isChecked(0,fbPhotosOnly)} />
+
+        <input type="submit" name="" class="button-secondary action submit verifyFeed" value="Verify Feed" />
+
+        <div class="verificationContent"></div>
+    </form>
+</script>

@@ -1,0 +1,252 @@
+/*
+Theme Name: DeSalvo 2012
+Theme URI: http://www.desalvocycles.com
+Author: Spencer Gray
+Author URI: http://www.desalvocycles.com
+Description: Proprietary theme for DeSalvo Custom Cycles
+Version: 0.1
+*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* DeSalvo Site */
+
+body {
+    background-color: #999999;
+    margin: auto;
+    width: 100%;
+}
+
+#page {
+    background-color: #666666;
+    border: 1px solid #000099;
+    box-shadow: 0 0 20px #000000;
+    margin: 10px auto;
+    overflow: hidden;
+    width: 1000px;
+}
+
+/**/
+div.header {position:relative; width:1000px; height: 170px; margin:0; padding:0; background-color:transparent;}
+
+/**/
+.headerleft {position: relative; float:left; width:850px; height:170px; margin:0; padding:0; background-color:transparent; color:#fff; font-size:.75em;}
+.header img.txt {position:relative; float:left; width:800px; height:170px; margin:10px 0 0 75px;}
+.header img.badge {position:relative; float:left; width:100px; height: 175px; margin:0 0 0 -175px;}
+
+/**/
+.headerright {position: relative; float:left; width:149px; height:150px; margin:10px 0 0 0; padding:0; background-color:transparent; border-left: 1px solid #333333;}
+.headerright p {float:left; width:125px; height:130px; margin:-20px 0 0 40px; color:#fff; font-size:.8em;}
+
+
+/* Main Navigation */
+.menu-main-menu-container {
+    width:1000px;
+    margin:5px 0 0;
+    padding:0;
+    height:30px;
+    font-family: verdana;
+    background-color:#009;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    position: relative;
+}
+
+.menu-main-menu-container ul > li {
+    display:block;
+    float:left;
+    clear:none;
+    width:140px;
+    position: relative;
+}
+
+.menu-main-menu-container ul ul {
+    display:none;
+    width:auto;
+    position:absolute;
+    float:left;
+    clear:both;
+    background: #009;
+    padding:10px 5px 0 5px;
+    left:-10px;
+}
+
+.menu-main-menu-container ul > li a {
+    line-height: 30px;
+}
+
+.menu-main-menu-container a {
+    color:#fff;
+    text-decoration: none;
+    font-size:17px;
+    text-shadow: black .5px .5px .5px;
+}
+
+.menu-main-menu-container ul > li:hover ul {
+    display:block;
+}
+
+.menu-main-menu-container ul ul li {
+    display:block;
+    float:left;
+    clear:both;
+}
+
+.menu-main-menu-container ul ul li a {
+    font-size:13px;
+    display:block;
+    width:100%;
+}
+
+.menu-main-menu-container ul ul li a:hover {
+    text-decoration: underline;
+}
+
+#menu-item-32 > a {
+    background:url(images/downarrow.png) no-repeat 75px 1px;
+    padding-right: 30px;
+}
+
+#menu-item-34 {
+    margin-left: 100px;
+}
+
+/* Footer */
+#footer {
+    width:100%;
+    overflow: hidden;
+    background: #009;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    border-top: 2px solid #4c728A;
+}
+
+.menu-footer-menu-container ul {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.menu-footer-menu-container ul li {
+    display:inline-block;
+    padding:0 20px;
+}
+
+#footer p, #footer a {
+    color:#666;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+#footer ul, #footer p {
+    margin:4px auto;
+}
+
+#footer p {
+    display:block;
+    clear:both;
+    text-align: center;
+}
+
+/*signature bikes section starts here*/
+div.signature {position:relative; width:1000px; height: 200px; margin: 15px auto; padding:0; background-color:transparent;}
+.signature p {width:900px; height:25px; margin:auto; color:#fff; border-bottom:4px solid #000099; font-family:verdana; font-size:1.2em;}
+.signature img {float:left; width:175px; height:150px; margin:10px 0 0 60px;}
+
+/**/
+div.press {position:relative; width:1000px; height: 300px; margin: 30px auto; padding:0; background-color:transparent;}
+.press p {float:left; width:265px; height:25px; margin:0 0 0 50px; color:#fff; border-bottom:4px solid #000099; font-family:verdana; font-size:1.2em;}
+
+/**/
+div.media {position:relative; float:left; width:404px; overflow:hidden; margin: 15px 50px; padding:0; background-color:transparent;}
+.media p {float:left; width:404px; height:25px; margin:0; color:#fff; border-bottom:4px solid #000099; font-family:verdana; font-size:1.2em;}
+.mediacontents {float:left; width:404px; overflow:hidden; margin:0; padding:1px; color:#fff; text-align:justify; background-color:#4c728a;}
+
+/**/
+div.recent {position:relative; float:left; width:404px; overflow:hidden; margin: 15px 50px; padding:0; background-color:transparent;}
+.recent p {float:left; width:404px; height:25px; margin:0; color:#fff; border-bottom:4px solid #000099; font-family:verdana; font-size:1.2em;}
+.recentcontents {float:left; width:404px; overflow:hidden; margin:0; padding:1px; color:#fff; text-align:justify; background-color:#4c728a;}
+
+/**/
+div.updates {position:relative; float:left; width:908px; overflow:hidden; margin: 15px 50px 30px 50px; padding:0; background-color:transparent;}
+.updates p {float:left; width:908px; height:25px; margin:0; color:#fff; border-bottom:4px solid #000099; font-family:verdana; font-size:1.2em;}
+.updatescontent {float:left; width:908px; overflow:hidden; margin:0px; padding:1px; color:#fff; text-align:justify; background-color:#4c728a;}
+.updatescontent a.thumb {float:left; width:200px; margin:3px 5px 2px 0;}
+.updatescontent div {display:block; overflow:hidden;}
+.updatescontent a.thumb {float:left; width:200px; margin:3px 5px 10px 0; display:block;}
+.updatescontent h5 {font-size:16px; float:left; margin:3px; width:675px; text-align:left;}
+.updatescontent p {font-size:12px; float:left; margin:3px; padding:0; clear:none; width:675px; border:none; text-align:left; color:#fff;}
+
+div.facebook {float:left; width:908px; overflow:hidden; margin:0px; padding:1px; color:#fff; text-align:justify; background-color:#4c728a;}
+div.fbPost {float:left; width:450px; overflow:hidden; margin:0px; padding:1px; color:#fff; text-align:justify; background-color:#4c728a;}
+.facebookcontent p {font-size:12px; float:left; margin:5px; padding:0; clear:none; width:300px; height: auto; border:none; text-align:left; color:#fff;}
+.facebookcontent h5 {font-size:14px; float:left; margin:3px; width:300px; text-align:left;}
+.facebookcontent img {float: left; width: auto; height: auto; margin: 5px; padding:0;}
+.facebookcontent a {color: #FFFFFF;}
+.facebookcontent a:visited {color:#FFFFFF;}
+.facebookcontent a:active {color:#FFFFFF;}
+
+div.awards {float:left; width:908px; overflow:hidden; margin:0px; padding:1px; color:#fff; text-align:justify; background-color:#4c728a;}
+div.awardsleft {float:left; width:350px; height:100px; overflow:hidden; margin:0px; padding:1px; color:#fff; text-align:justify; background-color:#4c728a;}
+.awardscontent p {font-size:14px; float:left; margin:5px 0 0 10px; padding:0; clear:none; width:225px; height: 18px; border:none; text-align:left; color:#fff;}
+.awardscontent img {float: left; width: 100px; height: 71px; margin: 5px 0 0 15px; padding:0;}
+.awardscontent h5 {font-size:14px; float:left; margin:3px; width:300px; text-align:left;}
+.awardscontent a {color: #FFFFFF;}
+.awardscontent a:visited {color:#FFFFFF;}
+.awardscontent a:active {color:#FFFFFF;}
+
+div.awardsright {float:left; width:550px; overflow:hidden; margin:0px; padding:1px; color:#fff; text-align:justify; background-color:#4c728a;}
+div.awardsright p {font-size:13px; float:left; margin:5px 0 0 5px; padding:0; clear:none; width:540px; height: 100px; border:none; text-align:justify; color:#fff;}
+
+/**/
+div.mainImage {width:1000px; height: 400px; margin:0; padding:0; background-color:transparent; }
+.mainImage img {float:left; width:1000px; height:400px; margin:-5px 0 0 0; border-bottom:4px solid #000099;}

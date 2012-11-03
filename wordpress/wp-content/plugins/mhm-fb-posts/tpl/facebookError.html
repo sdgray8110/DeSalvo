@@ -1,0 +1,13 @@
+<script id="facebookErrorTemplate" type="text/x-jquery-tmpl">
+    <h4>Facebook returned an error while trying to validate these settings.</h4>
+    <p>Please check your App Settings and try again.</p>
+
+    {{if error}}
+    <h3>Error Details:</h3>
+    <ul>
+        <li>Error Message: ${error.message}</li>
+        <li>Error Type: ${error.type}</li>
+        <li>Error Code: ${error.code}</li>
+    </ul>
+    {{/if}}
+</script>

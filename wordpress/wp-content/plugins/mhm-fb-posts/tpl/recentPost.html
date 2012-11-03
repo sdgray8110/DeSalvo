@@ -1,0 +1,12 @@
+<script id="recentPostTemplate" type="text/x-jquery-tmpl">
+    <h4>Most Recent Post</h4>
+    <p class="author"><a target="_blank" href="http://facebook.com/${from.id}">${from.name}</a></p>
+    <p>${message}</p>
+    <p class="timeAgo">${date.time_ago}</p>
+
+    <label>Save this feed?</label>
+    <input type="submit" name="" class="button-secondary action submit saveFeed" value="Yes">
+    <input type="submit" name="" class="button-secondary action submit clearFeed" value="No">
+
+    <input type="hidden" name="fbToken" value="${fbToken}">
+</script>

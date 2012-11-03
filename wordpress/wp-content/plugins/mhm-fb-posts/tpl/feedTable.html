@@ -1,0 +1,29 @@
+<script id="facebookTableTemplate" type="text/x-jquery-tmpl">
+    {{if savedFeeds.length}}
+    <table class="savedFeeds">
+        <thead>
+        <tr>
+            <th>Feed Name</th>
+            <th>Facebook User ID</th>
+            <th>Facebook App ID</th>
+            <th>Facebook App Secret</th>
+            <th>Number of posts</th>
+            <th colspan="2"></th>
+        </tr>
+        </thead>
+        {{each savedFeeds}}
+        <tr data-feedname="${feedName}" data-fbuserid="${fbUserID}" data-fbappid="${fbAppID}" data-fbsecret="${fbSecret}" data-fblimit="${fbLimit}" data-fbOwnerOnly="${fbOwnerOnly}" data-fbPhotosOnly="${fbPhotosOnly}">
+            <td>${feedName}</td>
+            <td>${fbUserID}</td>
+            <td>${fbAppID}</td>
+            <td>${fbSecret}</td>
+            <td>${fbLimit}</td>
+            <td><a class="editFeed" href="#">Edit</a></td>
+            <td><a class="deleteFeed" href="#">Delete</a></td>
+        </tr>
+        {{/each}}
+    </table>
+    {{else}}
+    <h2>You currently have no feeds. Click <em>Add Feed</em> to create one.</h2>
+    {{/if}}
+</script>

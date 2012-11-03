@@ -1,0 +1,45 @@
+<div id="mainImage">
+    <img src="{{mainImage.sizes.large}}" alt="{{mainImage.alt}}" />
+</div>
+
+<div class="press">
+    <div class="updates">
+        <p>Updates from the Shop</p>
+        <div class="facebook">
+            <div class="facebookcontent">
+                {{#feed}}
+                <div class="fbPost">
+                    <a class="thumb" rel="superbox[image]" href="{{picture.original}}"><img src="{{picture.thumb}}" alt="{{message}}"></a>
+                    <h5>{{date.formatted}} | <a href="{{link}}">{{likes.formatted}}</a></h5>
+                    <p>{{message}}</p>
+                </div>
+                {{/feed}}
+            </div>
+        </div>
+    </div>
+
+    <div class="updates">
+        {{#awards}}
+        <p>{{title}}</p>
+        <div class="awards">
+            <div class="awardscontent">
+                <div class="awardsleft">
+                    <a href="{{link}}"><img src="{{image.sizes.large}}" alt="{{image.alt}}"></a>
+                    {{#awards}}
+                    <p>{{award_year}} {{award_name}}</p>
+                    {{/awards}}
+                </div>
+                <div class="awardsright">
+                    <p>{{description}}</p>
+                </div>
+            </div>
+        </div>
+        {{/awards}}
+    </div>
+
+    <!-- don't lose this code!
+            <a class="thumb" rel="superbox[image]" href="images/updates/Builderspecial.JPG">
+                <img src="images/updates/Builderspecial_thumb.jpg" alt="Builder Special"/>
+            </a>
+    -->
+</div>

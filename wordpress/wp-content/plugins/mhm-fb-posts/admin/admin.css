@@ -1,0 +1,14 @@
+.fbFeedForm {
+    margin: 10px;
+}
+
+.fbFeedForm label,
+.fbFeedForm input.text,
+.fbFeedForm .submit {
+    display: block;
+    margin: 0 0 8px;
+}
+
+.fbFeedForm label {
+    margin: 0 0 3px;
+}
