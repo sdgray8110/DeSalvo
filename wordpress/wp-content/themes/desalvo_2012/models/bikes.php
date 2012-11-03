@@ -6,6 +6,6 @@ class Bikes {
     public function __construct() {
         $this->id = get_the_ID();
         $this->title = get_the_title();
-        $this->description = get_field('description', $this->id);
+        $this->description = ac_get_field('description', $this->id);
     }
 }

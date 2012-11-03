@@ -9,9 +9,9 @@ class Awards {
 
     private function get_awards() {
         $this->title = get_the_title($this->id);
-        $this->description = get_field('awards_description', $this->id);
-        $this->image =  $obj = get_field('awards_image', $this->id);
-        $this->link =  get_field('awards_link', $this->id);
-        $this->awards =  get_field('awards', $this->id);
+        $this->description = ac_get_field('awards_description', $this->id);
+        $this->image =  $obj = ac_get_field('awards_image', $this->id);
+        $this->link =  ac_get_field('awards_link', $this->id);
+        $this->awards =  ac_get_field('awards', $this->id);
     }
 }

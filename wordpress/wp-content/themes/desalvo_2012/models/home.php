@@ -12,7 +12,7 @@ class Homepage {
     }
 
     private function get_random_image() {
-        $images = get_field('images', $this->imagesPageID);
+        $images = ac_get_field('images', $this->imagesPageID);
 
         return $images[rand(0,count($images) - 1)]['image'];
     }
