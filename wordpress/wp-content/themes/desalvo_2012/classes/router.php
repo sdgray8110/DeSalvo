@@ -19,16 +19,34 @@ class Router {
         ));
     }
 
-    private function get_data($name) {
+    private function classname($name) {
         $classname = ucfirst($name);
 
-        return new $classname();
+        if (!class_exists($classname)) {
+            $classname = 'Generic';
+        }
+
+        return $classname;
+    }
+
+    private function get_data($name) {
+        $model = $this->classname($name);
+
+        return new $model();
+    }
+
+    private function get_template($name) {
+        if ($this->classname($name) == 'Generic') {
+            $name = 'generic';
+        }
+
+        return $this->m->loadTemplate($name);
     }
 
     private function get_view($name = null) {
         $name = $name ? $name : $this->post->name;
         $data = $this->get_data($name);
-        $tpl = $this->m->loadTemplate($name);
+        $tpl = $this->get_template($name);
 
         return $tpl->render($data);
     }
