@@ -1,3 +1,31 @@
-<h1>{{title}} Bikes</h1>
+<div class="pageContent bikes">
+    <h1>{{title}} Bikes</h1>
 
-{{{description}}}
+    {{{photos}}}
+
+    <div class="description module">
+        {{{description}}}
+    </div>
+
+    <div class="features module">
+        <h3>Features</h3>
+        <ul>
+        {{#features}}
+            <li>{{feature}}</li>
+        {{/features}}
+        </ul>
+    </div>
+
+    <div class="tubing module">
+        <h3>Tubing &amp; Pricing</h3>
+        <ul>
+            {{#tubing}}
+            <li>{{item}}</li>
+            {{/tubing}}
+        </ul>
+    </div>
+
+    {{{faq}}}
+
+    {{{geometry}}}
+</div>

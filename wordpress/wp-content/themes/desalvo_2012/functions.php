@@ -3,6 +3,8 @@
 add_action( 'after_setup_theme', 'desalvo_setup' );
 
 function desalvo_setup() {
+    echo get_the_ID();
+
     bootstrap_classes();
     enqueue_js();
 }

@@ -1,0 +1,15 @@
+<div id="bikeGallery">
+    <div class="bigImg module">
+        <img src="{{primary.photos}}" alt="{{primary.description}}" />
+    </div>
+
+    <div class="carouselContainer">
+        <div class="carousel view6">
+            <ul class="thumbnailGallery">
+            {{#photos}}
+                <li {{#active}}class="active"{{/active}}{{#last}}class="lastChild"{{/last}}><a href="{{photos}}"><img src="{{thumbnail}}" alt="{{description}}"></a></li>
+            {{/photos}}
+            </ul>
+        </div>
+    </div>
+</div>

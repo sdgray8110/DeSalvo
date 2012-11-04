@@ -1,0 +1,14 @@
+<div id="faq" class="faq module">
+    <h3>FAQ</h3>
+
+    <ul class="accordion">
+        {{#faq}}
+        <li>
+            <h4>{{entry_label}}<span></span></h4>
+            <div class="slider">
+                {{{entry_description}}}
+            </div>
+        </li>
+        {{/faq}}
+    </ul>
+</div>

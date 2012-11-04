@@ -19,6 +19,24 @@ class Router {
         ));
     }
 
+    private static function mustache() {
+        $themePath = get_stylesheet_directory();
+
+        require_once($themePath . '/mustache.php/src/Mustache/Autoloader.php');
+        Mustache_Autoloader::register();
+
+        return new Mustache_Engine(array(
+            'loader' => new Mustache_Loader_FilesystemLoader($themePath . '/templates')
+        ));
+    }
+
+    public static function render_template($name,$data) {
+        $m = Router::mustache();
+        $tpl = $m->loadTemplate($name);
+
+        return $tpl->render($data);
+    }
+
     private function classname($name) {
         $classname = ucfirst($name);
 
