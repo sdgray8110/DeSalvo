@@ -1,49 +1,50 @@
 {{#geometry}}
     <div class="geometry_group module">
         <h3>{{table_group_header}}</h3>
-        {{#table_group}}
-        <h4>{{table_header}}</h4>
-        <table>
-            <thead>
-                <tr>
-                {{#columns}}
-                    {{#size}}<th>Size</th>{{/size}}
-                    {{#top_tube_length}}<th>Top Tube Length</th>{{/top_tube_length}}
-                    {{#seat_tube_c-to-top}}<th>Seat Tube C-to-Top</th>{{/seat_tube_c-to-top}}
-                    {{#effective_seat_tube}}<th>Effective Seat Tube</th>{{/effective_seat_tube}}
-                    {{#effective_top_tube}}<th>Effective Top Tube</th>{{/effective_top_tube}}
-                    {{#head_tube_length}}<th>Head Tube Length</th>{{/head_tube_length}}
-                    {{#head_seat_angle}}<th>Head/Seat Angle</th>{{/head_seat_angle}}
-                    {{#chain_stay_length}}<th>Chain Stay Length</th>{{/chain_stay_length}}
-                    {{#bb_drop}}<th>BB Drop</th>{{/bb_drop}}
-                    {{#stand_over_height}}<th>Stand Over Height</th>{{/stand_over_height}}
-                {{/columns}}
-                </tr>
-            </thead>
-            <tbody>
-            {{#table_row}}
-                <tr>
-                    {{#size}}<td>{{size}}</td>{{/size}}
-                    {{#top_tube_length}}<td>{{top_tube_length}}</td>{{/top_tube_length}}
-                    {{#seat_tube_c-to-top}}<td>{{seat_tube_c-to-top}}</td>{{/seat_tube_c-to-top}}
-                    {{#effective_seat_tube}}<td>{{effective_seat_tube}}</td>{{/effective_seat_tube}}
-                    {{#effective_top_tube}}<td>{{effective_top_tube}}</td>{{/effective_top_tube}}
-                    {{#head_tube_length}}<td>{{head_tube_length}}</td>{{/head_tube_length}}
-                    {{#head_seat_angle}}<td>{{head_seat_angle}}</td>{{/head_seat_angle}}
-                    {{#chain_stay_length}}<td>{{chain_stay_length}}</td>{{/chain_stay_length}}
-                    {{#bb_drop}}<td>{{bb_drop}}</td>{{/bb_drop}}
-                    {{#stand_over_height}}<td>{{stand_over_height}}</td>{{/stand_over_height}}
-                </tr>
-            {{/table_row}}
-            </tbody>
-        </table>
+        <div class="content">
+            {{#table_group}}
+            <h4>{{table_header}}</h4>
+            <table width="100%" border="0" cellpadding="1" cellspacing="1">
+                <thead>
+                    <tr>
+                    {{#columns}}
+                        {{#size}}<th>Size</th>{{/size}}
+                        {{#top_tube_length}}<th>Top Tube Length</th>{{/top_tube_length}}
+                        {{#seat_tube_c-to-top}}<th>Seat Tube C-to-Top</th>{{/seat_tube_c-to-top}}
+                        {{#effective_seat_tube}}<th>Effective Seat Tube</th>{{/effective_seat_tube}}
+                        {{#effective_top_tube}}<th>Effective Top Tube</th>{{/effective_top_tube}}
+                        {{#head_tube_length}}<th>Head Tube Length</th>{{/head_tube_length}}
+                        {{#head_seat_angle}}<th>Head/Seat Angle</th>{{/head_seat_angle}}
+                        {{#chain_stay_length}}<th>Chain Stay Length</th>{{/chain_stay_length}}
+                        {{#bb_drop}}<th>BB Drop</th>{{/bb_drop}}
+                        {{#stand_over_height}}<th>Stand Over Height</th>{{/stand_over_height}}
+                    {{/columns}}
+                    </tr>
+                </thead>
+                <tbody>
+                {{#table_row}}
+                    <tr>
+                        {{#size}}<td>{{size}}</td>{{/size}}
+                        {{#top_tube_length}}<td>{{top_tube_length}}</td>{{/top_tube_length}}
+                        {{#seat_tube_c-to-top}}<td>{{seat_tube_c-to-top}}</td>{{/seat_tube_c-to-top}}
+                        {{#effective_seat_tube}}<td>{{effective_seat_tube}}</td>{{/effective_seat_tube}}
+                        {{#effective_top_tube}}<td>{{effective_top_tube}}</td>{{/effective_top_tube}}
+                        {{#head_tube_length}}<td>{{head_tube_length}}</td>{{/head_tube_length}}
+                        {{#head_seat_angle}}<td>{{head_seat_angle}}</td>{{/head_seat_angle}}
+                        {{#chain_stay_length}}<td>{{chain_stay_length}}</td>{{/chain_stay_length}}
+                        {{#bb_drop}}<td>{{bb_drop}}</td>{{/bb_drop}}
+                        {{#stand_over_height}}<td>{{stand_over_height}}</td>{{/stand_over_height}}
+                    </tr>
+                {{/table_row}}
+                </tbody>
+            </table>
+            {{/table_group}}
 
-        <ul>
-        {{#table_group_disclaimers}}
-            <li>{{.}}</li>
-        {{/table_group_disclaimers}}
-        </ul>
-
-        {{/table_group}}
+            <ul class="disclaimers">
+                {{#table_group_disclaimers}}
+                <li>{{.}}</li>
+                {{/table_group_disclaimers}}
+            </ul>
+        </div>
     </div>
 {{/geometry}}
