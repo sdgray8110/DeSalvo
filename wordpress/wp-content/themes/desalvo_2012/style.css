@@ -222,10 +222,21 @@ div.header {position:relative; width:1000px; height: 170px; margin:0; padding:0;
     text-decoration: underline;
 }
 
-#menu-item-32 > a {
-    background:url(images/downarrow.png) no-repeat 75px 1px;
+#menu-item-32 > a,
+#menu-item-83 > a {
+    background:url(images/downarrow.png) no-repeat;
     padding-right: 30px;
 }
+
+#menu-item-32 a {
+    background-position:  right 1px;
+}
+
+#menu-item-83 > a {
+    background-position:  right 1px;
+}
+
+
 
 #menu-item-34 {
     margin-left: 100px;
