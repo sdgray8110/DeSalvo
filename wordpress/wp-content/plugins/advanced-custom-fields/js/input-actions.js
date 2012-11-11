@@ -21,7 +21,9 @@ var acf = {
 		'gallery_tb_title_edit' : "Edit Image",
 		'repeater_min_alert' : "Minimum rows reached ( {min} rows )",
 		'repeater_max_alert' : "Maximum rows reached ( {max} rows )"
-	}
+	},
+	conditional_logic : {},
+	sortable_helper : null
 };
 
 (function($){
@@ -54,7 +56,7 @@ var acf = {
 		$('#adv-settings label[for*="acf_"]').addClass('acf_hide_label');
 		
 		// hide acf stuff
-		$('#poststuff .acf_postbox').hide();
+		$('#poststuff .acf_postbox').addClass('acf-hidden');
 		$('#adv-settings .acf_hide_label').hide();
 		
 		// loop through acf metaboxes
@@ -72,7 +74,7 @@ var acf = {
 			// show / hide
 			if(show == 'true')
 			{
-				$(this).show();
+				$(this).removeClass('acf-hidden');
 				$('#adv-settings .acf_hide_label[for="acf_' + id + '-hide"]').show();
 			}
 			
@@ -772,9 +774,11 @@ var acf = {
 	// create wysiwyg
 	$.fn.acf_activate_wysiwyg = function(){
 		
-
+		
+		
 		// add tinymce to all wysiwyg fields
 		$(this).find('.acf_wysiwyg textarea').each(function(){
+			
 			
 			// is clone field?
 			if( acf.is_clone_field($(this)) )
@@ -844,6 +848,8 @@ var acf = {
 			acf_wysiwyg_buttons.theme_advanced_buttons2 = tinyMCE.settings.theme_advanced_buttons2;
 		}
 		
+		$(document).trigger('acf/setup_fields', $('#poststuff'));
+		
 	});
 	
 	$(window).load(function(){
@@ -858,20 +864,80 @@ var acf = {
 		
 	});
 	
-	// Sortable: Start
-	$('.repeater > table > tbody, .acf_flexible_content > .values').live( "sortstart", function(event, ui) {
-		
-		$(ui.item).find('.acf_wysiwyg textarea').each(function(){
-			tinyMCE.execCommand("mceRemoveControl", false, $(this).attr('id'));
+	
+	/*
+	*  Sortable Helper
+	*
+	*  @description: keeps widths of td's inside a tr
+	*  @since 3.5.1
+	*  @created: 10/11/12
+	*/
+	
+	acf.sortable_helper = function(e, ui)
+	{
+		ui.children().each(function(){
+			$(this).width($(this).width());
 		});
+		return ui;
+	};
+
+
+	/*
+	*  acf/sortable_start
+	*
+	*  @description:
+	*  @since 3.5.1
+	*  @created: 10/11/12
+	*/
+	
+	$(document).live('acf/sortable_start', function(e, div) {
+		
+		//console.log( 'sortstart' );
+		
+		$(div).find('.acf_wysiwyg textarea').each(function(){
+			
+			// vars
+			var textarea = $(this),
+				id = textarea.attr('id'),
+				wysiwyg = tinymce.get( id );
+			
+			
+			// if wysiwyg was found (should be always...), remove its functionality and set the value (to keep line breaks)
+			if( wysiwyg )
+			{
+				var val = wysiwyg.getContent();
+				
+				tinyMCE.execCommand("mceRemoveControl", false, id);
+			
+				textarea.val( val );
+			}
+			
+		});
+
 		
 	});
 	
-	// Sortable: End
-	$('.repeater > table > tbody, .acf_flexible_content > .values').live( "sortstop", function(event, ui) {
+	
+	/*
+	*  acf/sortable_stop
+	*
+	*  @description:
+	*  @since 3.5.1
+	*  @created: 10/11/12
+	*/
+	
+	$(document).live('acf/sortable_stop', function(e, div) {
 		
-		$(ui.item).find('.acf_wysiwyg textarea').each(function(){
-			tinyMCE.execCommand("mceAddControl", false, $(this).attr('id'));
+		//console.log( 'sortstop' );
+		
+		$(div).find('.acf_wysiwyg textarea').each(function(){
+			
+			// vars
+			var textarea = $(this),
+				id = textarea.attr('id');
+			
+			// add functionality back in
+			tinyMCE.execCommand("mceAddControl", false, id);
 		});
 		
 	});
@@ -905,28 +971,29 @@ var acf = {
 	// make sortable
 	function repeater_add_sortable( repeater ){
 		
-		var fixHelper = function(e, ui) {
-			ui.children().each(function() {
-				$(this).width($(this).width());
-			});
-			return ui;
-		};
-		
 		repeater.find('> table > tbody').unbind('sortable').sortable({
 			update: function(event, ui){
 				repeater_update_order( repeater );
 			},
 			items : '> tr.row',
-			handle: '> td.order',
-			helper: fixHelper,
-			forceHelperSize: true,
-			forcePlaceholderSize: true,
-			scroll: true,
-			start: function (event, ui) {
-				
+			handle : '> td.order',
+			helper : acf.sortable_helper,
+			forceHelperSize : true,
+			forcePlaceholderSize : true,
+			scroll : true,
+			start : function (event, ui) {
+			
+				$(document).trigger('acf/sortable_start', ui.item);
+
 				// add markup to the placeholder
 				var td_count = ui.item.children('td').length;
         		ui.placeholder.html('<td colspan="' + td_count + '"></td>');
+        		
+   			},
+   			stop : function (event, ui) {
+			
+				$(document).trigger('acf/sortable_stop', ui.item);
+				
    			}
 		});
 	};
@@ -1181,7 +1248,20 @@ var acf = {
 		// remove (if clone) and add sortable
 		div.children('.values').unbind('sortable').sortable({
 			items : '> .layout',
-			handle: '> .actions .order'
+			handle : '> .actions .order',
+			forceHelperSize : true,
+			forcePlaceholderSize : true,
+			scroll : true,
+			start : function (event, ui) {
+			
+				$(document).trigger('acf/sortable_start', ui.item);
+        		
+   			},
+   			stop : function (event, ui) {
+			
+				$(document).trigger('acf/sortable_stop', ui.item);
+				
+   			}
 		});
 		
 	};
@@ -1353,6 +1433,7 @@ var acf = {
 				altField : alt_field,
 				altFormat :  save_format,
 				changeYear: true,
+				yearRange: "-100:+100",
 				changeMonth: true,
 				showButtonPanel : true
 			});
@@ -1544,7 +1625,6 @@ var acf = {
 			// is clone field?
 			if( acf.is_clone_field($(this).children('input[type="hidden"]')) )
 			{
-				//console.log('Clone Field: Gallery');
 				return;
 			}
 			
@@ -1577,6 +1657,64 @@ var acf = {
 		});
 	
 	});
+	
+	
+	/*
+	*  Conditional Logic Calculate
+	*
+	*  @description: 
+	*  @since 3.5.1
+	*  @created: 15/10/12
+	*/
+	
+	acf.conditional_logic.calculate = function( options )
+	{
+		// vars
+		var field = $('.field-' + options.field),
+			toggle = $('.field-' + options.toggle),
+			r = false;
+		
+		
+		// compare values
+		if( toggle.hasClass('field-true_false') || toggle.hasClass('field-checkbox') || toggle.hasClass('field-radio') )
+		{
+			if( options.operator == "==" )
+			{
+				if( toggle.find('input[value="' + options.value + '"]:checked').exists() )
+				{
+					r = true;
+				}
+			}
+			else
+			{
+				if( !toggle.find('input[value="' + options.value + '"]:checked').exists() )
+				{
+					r = true;
+				}
+			}
+			
+		}
+		else
+		{
+			if( options.operator == "==" )
+			{
+				if( toggle.find('*[name]').val() == options.value )
+				{
+					r = true;
+				}
+			}
+			else
+			{
+				if( toggle.find('*[name]').val() != options.value )
+				{
+					r = true;
+				}
+			}
+			
+		}
+		
+		return r;
+	}
 	
 	
 })(jQuery);

@@ -868,3 +868,22 @@ ul.accordion .active h4 span {background:url('images/minus.png') no-repeat;}
     color:#009;
     font-weight: 300;
 }
+
+.order-page h1 {
+    margin-bottom: 0;
+}
+
+.order-page .content {
+    padding: 15px 20px;
+    background: #416680;
+    margin: 0 0 30px 0;
+    float: left;
+}
+
+.order-page a {
+    text-decoration: underline;
+}
+
+.order-page a:hover {
+    text-decoration: none;
+}

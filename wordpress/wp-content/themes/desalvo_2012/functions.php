@@ -30,6 +30,8 @@ function enqueue_js() {
 }
 
 function add_actions() {
+    add_action('wp_dashboard_setup', 'remove_dashboard_widgets' );
+    add_action('admin_menu', 'remove_menus');
     add_action('wp_ajax_send_contact_email', array('Contact', 'send_contact_email'));
 }
 
@@ -62,6 +64,26 @@ if ( function_exists( 'register_nav_menus' ) ) {
 		)
 	);
 }
+
+function remove_menus () {
+    global $menu;
+    $restricted = array(__('Posts'),__('Links'),__('Comments'));
+    end ($menu);
+    while (prev($menu)){
+        $value = explode(' ',$menu[key($menu)][0]);
+        if(in_array($value[0] != NULL?$value[0]:"" , $restricted)){unset($menu[key($menu)]);}
+    }
+}
+
+function remove_dashboard_widgets() {
+    global $wp_meta_boxes;
+
+    unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_quick_press']);
+    unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_incoming_links']);
+    unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_recent_drafts']);
+    unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_recent_comments']);
+}
+
 
 function get_year() {
     return date('Y');
