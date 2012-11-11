@@ -1,0 +1,24 @@
+{{#fields}}
+    {{#text}}
+        <label for="contact_{{field_name}}">{{field_label}}</label>
+        <input class="text" type="text" name="contact_{{field_name}}" id="contact_{{field_name}}" />
+    {{/text}}
+
+    {{#select}}
+        <label for="contact_{{field_name}}">{{field_label}}</label>
+        <select id="contact_{{field_name}}" name="contact_{{field_name}}">
+        {{#field_options}}
+            <option value="{{.}}">{{.}}</option>
+        {{/field_options}}
+        </select>
+    {{/select}}
+
+    {{#textarea}}
+        <label for="contact_{{field_name}}">{{field_label}}</label>
+        <textarea id="contact_{{field_name}}" name="contact_{{field_name}}"></textarea>
+    {{/textarea}}
+{{/fields}}
+{{^fields}}
+    <h4>Email sent successfully.</h4>
+    <p>We'll respond to your inquiry as quickly as possible. Thank you.</p>
+{{/fields}}

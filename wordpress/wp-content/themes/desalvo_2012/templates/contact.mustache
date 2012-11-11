@@ -1,0 +1,27 @@
+<var id="pageData" class="hidden">
+    {{pageData}}
+</var>
+
+<div class="pageContent {{name}}">
+    <h1>{{title}}</h1>
+    <div class="contactuscontent module">
+        <ul class="contactInfo">
+            <li><h4>{{site_name}}</h4></li>
+            <li>{{street_address}}</li>
+            <li>{{city}}</li>
+            <li>Phone: {{phone}}</li>
+        </ul>
+
+        <form id="contactUs">
+            <fieldset>
+                <legend><h3>{{form_title}}</h3></legend>
+
+                <div id="contact_fields">
+                    {{{fields}}}
+
+                    <input type="submit" id="contactSubmit" value="{{submit_button_name}}">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>

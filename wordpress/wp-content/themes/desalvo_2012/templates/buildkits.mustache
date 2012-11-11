@@ -1,0 +1,22 @@
+<div class="pageContent {{name}}">
+    <h1>{{title}}</h1>
+    <div class="buildkits_content">
+        {{{content}}}
+
+        <ul id="brands" class="brands">
+            {{#brands}}
+            <li class="hide brand">
+                <div class="logo">
+                    <img src="{{brand_logo}}" alt="{{brand_name}}" />
+                </div>
+                <div class="brandDetail">
+                    <div class="brandFocus">
+                        <h5>{{brand_name}}</h5>
+                        <p><a href="{{brand_website}}" target="_blank">Visit Website &raquo;</a></p>
+                    </div>
+                </div>
+            </li>
+            {{/brands}}
+        </ul>
+    </div>
+</div>

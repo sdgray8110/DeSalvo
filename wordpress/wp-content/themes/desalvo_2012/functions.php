@@ -7,6 +7,11 @@ function desalvo_setup() {
 
     bootstrap_classes();
     enqueue_js();
+    add_actions();
+
+    if (is_admin()) {
+        new GlobalSettings();
+    }
 }
 
 function enqueue_js() {
@@ -14,12 +19,18 @@ function enqueue_js() {
         wp_deregister_script('jquery');
         wp_register_script('jquery', get_stylesheet_directory_uri() . '/js/lib/jquery-1.8.2.min.js');
         wp_register_script('fancybox', get_stylesheet_directory_uri() . '/js/lib/jquery.fancybox.pack.js');
+        wp_register_script('serializeObject', get_stylesheet_directory_uri() . '/js/lib/serializeObject.js');
         wp_register_script('global', get_stylesheet_directory_uri() . '/js/global.js');
 
         wp_enqueue_script('jquery');
         wp_enqueue_script('fancybox');
+        wp_enqueue_script('serializeObject');
         wp_enqueue_script('global');
     }
+}
+
+function add_actions() {
+    add_action('wp_ajax_send_contact_email', array('Contact', 'send_contact_email'));
 }
 
 function get_title() {

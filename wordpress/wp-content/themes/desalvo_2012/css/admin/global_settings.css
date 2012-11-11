@@ -1,0 +1,17 @@
+.global_settings input,
+.global_settings label {
+    display: block;
+    float: left;
+    clear: both;
+}
+
+.global_settings input {
+    margin: 0 0 10px 0;
+}
+
+.global_settings #updateMessage {
+    clear: both;
+    font-weight: 700;
+    float: left;
+    margin: 15px 0;
+}

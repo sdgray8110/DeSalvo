@@ -16,4 +16,6 @@ var bikes = (function() {
     return self;
 })();
 
-bikes.init();
+$(document).ready(function() {
+    bikes.init();
+});

@@ -115,7 +115,6 @@ body {
     text-decoration: underline;
 }
 
-
 .imageRight {
     float: right;
     margin: 0 0 15px 30px;
@@ -123,6 +122,10 @@ body {
 
 .imageRight img {
     display: block;
+}
+
+.hidden {
+    display: none;
 }
 
 /* About Page */
@@ -707,4 +710,154 @@ ul.accordion .active h4 span {background:url('images/minus.png') no-repeat;}
     padding: 10px;
     background: #000;
     background: rgba(0, 0, 0, .8);
+}
+
+.contact .module {
+    float: left;
+}
+
+.contact h1 {
+    margin:0
+}
+
+
+.contactuscontent {
+    width:100%;
+    padding: 0 0 20px 0;
+    background: #4c728a;
+}
+.contactInfo {margin:10px 0 0; padding:0; list-style-type:none;}
+.contactInfo li {margin:0; text-align:center; color:#fff; font-family:verdana; font-size:18px}
+.contactInfo h4 {font-size:22px; margin:0;}
+
+#contactUs fieldset {display:block; width:100%; padding: 20px 0;}
+#contactUs legend {width:100%; float:left; margin: 0 0 12px;}
+#contactUs h3 {color: #333;font-size: 24px;margin: 0 auto;width: 216px;border-bottom: 1px solid navy;float: none;}
+#contactUs {width:700px; background:#ccc; display:block; margin: 15px auto; font-family:arial; }
+#contactUs label, #contactUs input.text, #contactUs select {float:left; height:20px}
+#contactUs textarea, #contactUs input.text {padding:3px}
+#contactUs textarea {float:left; width:400px; height:200px; border:1px solid #000;}
+#contactUs label {width:200px; color:#333; font-weight:700; clear:both; margin-right:15px; text-align:right;}
+#contactUs input.text, #contactUs select {margin-bottom:10px; width:250px; border:1px solid #000;}
+#contactSubmit {clear:both; margin:10px 0 0 215px;}
+#contactUs h4 {width:auto; font-size:16px; border:none;color:#000; margin:0 30px; font-weight: 700;}
+#contactUs p {width:auto; font-size:12px; border:none;color:#000; margin:0 30px}
+
+.contact .validationErrors {
+    float: left;
+    width: 100%;
+    margin: 0 0 15px;
+    padding: 10px 0;
+    background: #C95959;
+    border-top: 2px solid #881818;
+}
+
+.contact .validationErrors li {
+    margin: 0 0 2px 30px;
+    list-style-type: disc;
+    color:#881818;
+}
+
+.contact .validationErrors span {
+    color: #fff;
+}
+
+/* Build Kit */
+.pageContent.buildkits {
+    overflow: visible;
+}
+
+.buildkits h1 {
+    margin: 0;
+}
+
+.buildkits .buildkits_content {
+    padding: 15px 20px;
+    background: #416680;
+    margin: 0 0 30px 0;
+    float: left;
+}
+
+.buildkits_content > p,
+.buildkits .brands {
+    float: left;
+    clear: both;
+    width: 868px;
+}
+
+.brands .brand {
+    width: 246px;
+    background: white;
+    border: 15px solid #F1F1F1;
+    float:left;
+    margin: 0 0 20px;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    transition: opacity .5s;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+.brands .hide {
+    opacity: 0;
+}
+
+.brands .logo {
+    display: block;
+    float: left;
+}
+
+.brands .logo img {
+    display: block;
+    margin: 10px 23px;
+}
+
+.brands .brandDetail {
+    float: left;
+    position: relative;
+    width:100%;
+    height: 0;
+    overflow: visible;
+    z-index: 2;
+}
+
+.brands .brandFocus {
+    position: absolute;
+    right: -15px;
+    width:0;
+    background: #F1F1F1;
+    overflow: hidden;
+    border-bottom: 2px solid #009;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.8);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    transition: .5s;
+}
+
+.brands .brand:hover .brandFocus {
+    width:276px;
+}
+
+.brands .brandFocus h5,
+.brands .brandFocus p {
+    margin: 0 15px;
+    width:246px;
+}
+
+.brands .brandFocus h5 {
+    font-size: 16px;
+    margin-top: 8px;
+    color: #000;
+    font-weight: 700;
+}
+
+.brands .brandFocus p {
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+.brands .brandFocus a {
+    color:#009;
+    font-weight: 300;
 }
