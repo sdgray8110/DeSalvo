@@ -5,13 +5,9 @@
             <img alt="badge" src="http://www.desalvocycles.com/images/badge.png" class="badge">
         </div>
         <div class="headerright">
-
-            <div class="social">
-                <a title="Follow DeSalvo on Facebook" href="http://www.facebook.com/#!/pages/DeSalvo-Custom-Cycles/193361797343222">
-                    <img alt="DeSalvo on Facebook" src="http://www.desalvocycles.com/images/socialIcons/socialicon_facebook.png"> facebook
-                </a>
-            </div>
-
+            <p class="facebook">
+                <a href="http://www.facebook.com/#!/pages/DeSalvo-Custom-Cycles/193361797343222">Facebook</a>
+            </p>
             <p>541.488.8400</p>
         </div>
     </div>

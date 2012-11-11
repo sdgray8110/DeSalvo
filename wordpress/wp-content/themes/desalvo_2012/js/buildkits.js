@@ -10,11 +10,14 @@ var buildkits = (function() {
         },
 
         attachHandlers: function() {
-            setTimeout(function() {
+            var images = self.brands.find('img'),
+                len = images.length;
+
+            images.load(function() {
                 self.brands.masonry({
                     gutterWidth: 20
                 }).find('.hide').removeClass('hide');
-            },200);
+            });
         }
     };
 

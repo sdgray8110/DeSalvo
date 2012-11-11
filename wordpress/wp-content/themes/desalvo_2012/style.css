@@ -161,8 +161,15 @@ div.header {position:relative; width:1000px; height: 170px; margin:0; padding:0;
 
 /**/
 .headerright {position: relative; float:left; width:149px; height:150px; margin:10px 0 0 0; padding:0; background-color:transparent; border-left: 1px solid #333333;}
-.headerright p {float:left; width:125px; height:130px; margin:-20px 0 0 40px; color:#fff; font-size:.8em;}
-
+.headerright p, .headerright a {color:#fff; font-size: 14px; text-decoration: none;}
+.headerright p {margin: 0 15px 10px 15px;}
+.headerright .facebook a {
+    line-height: 25px;
+    height: 25px;
+    display: block;
+    background: url(images/socialicon_facebook.png) 0 0 no-repeat;
+    padding: 0 0 0 35px;
+}
 
 /* Main Navigation */
 .menu-main-menu-container {
